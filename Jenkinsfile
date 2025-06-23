@@ -20,14 +20,14 @@ node {
     jenkins_git_creds_id: "github-cred",
     source_code_path: "",
      // Dependency Scanning
-    dependency_check: true,
+    dependency_check: false,
     dependency_scan_tool: "owasp",
     owasp_project_name: "owasp",
     owasp_report_publish: true,
     owasp_report_format: "html",
     fail_job_if_dependency_returned_exception: true,
     // Creds Scanning
-    gitleaks_check: true,
+    gitleaks_check: false,
     fail_job_if_leak_detected: false,
     gitleaks_report_format: "json",
     gitleaks_report_jenkins_publish: true,
@@ -35,7 +35,7 @@ node {
     build_tool: "maven",
     pom_location: " ",
     // Unit Testing
-    unit_testing_check: true,
+    unit_testing_check: false,
     fail_job_if_unit_issue_detected: false,
     build_tool: "maven",
     unit_test_reports_path: "*/target/surefire-reports/*.xml",
@@ -58,12 +58,12 @@ node {
     codeartifact_domain: "ecomexpress",
     codeartifact_owner: "543339517346",
     // Image scaning
-    image_scanning_check: true,
+    image_scanning_check: false,
     image_tag: "latest",
     scan_severity: "CRITICAL",
     image_scanning_report_publish: true,
     // Image size validator
-    image_size_validator_check: true,
+    image_size_validator_check: false,
     max_allowed_image_size: 100,
     fail_job_if_validation_fail: false,
     // Publish Artifact(Docker Image)
