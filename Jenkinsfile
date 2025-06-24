@@ -51,7 +51,7 @@ node {
     jenkins_sonarqube_token_creds_id: "sonar-token",
     // Build Dockerfile
     perform_build_dockerfile: true,
-    image_name: "java-service",
+    image_name: "salary-api",
     dockerfile_location: "/Dockerfile",
     dockerfile_context: "",
     codeartifact_dependency: false,
@@ -70,14 +70,14 @@ node {
     artifact_publish_check: true,
     artifact_destination_type: "harbor",
     jenkins_aws_credentials_id: "aws-rajat",
-    docker_image_name: "java-service",
+    docker_image_name: "salary-api",
     ecr_repo_name: "ecom-notification-consumer-service",
     ecr_region: "ap-south-1",
     account_id: "543339517346",
 
     // Harbor Specific Parameters (NEW)
     harbor_url: "registry.ldc.opstree.dev",
-    harbor_project: "demo",
+    harbor_project: "ot-microservices",
     harbor_credentials_id: "harbor-creds",
     //dockle scanning
     dockle_scan_check: 'false', // or 'false'
