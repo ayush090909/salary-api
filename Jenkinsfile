@@ -59,7 +59,7 @@ node {
     codeartifact_owner: "543339517346",
     // Image scaning
     image_scanning_check: false,
-    image_tag: "latest",
+    image_tag: "affe68b",
     scan_severity: "CRITICAL",
     image_scanning_report_publish: true,
     // Image size validator
