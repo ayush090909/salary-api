@@ -70,7 +70,7 @@ node {
     artifact_publish_check: true,
     artifact_destination_type: "harbor",
     jenkins_aws_credentials_id: "aws-rajat",
-    docker_image_name: "ecom-notification-consumer-service",
+    docker_image_name: "java-service",
     ecr_repo_name: "ecom-notification-consumer-service",
     ecr_region: "ap-south-1",
     account_id: "543339517346",
