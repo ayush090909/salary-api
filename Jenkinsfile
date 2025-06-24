@@ -76,7 +76,7 @@ node {
     account_id: "543339517346",
 
     // Harbor Specific Parameters (NEW)
-    harbor_url: "https://registry.ldc.opstree.dev/",
+    harbor_url: "registry.ldc.opstree.dev",
     harbor_project: "demo",
     harbor_credentials_id: "harbor-creds",
     //dockle scanning
