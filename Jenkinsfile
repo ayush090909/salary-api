@@ -67,13 +67,18 @@ node {
     max_allowed_image_size: 100,
     fail_job_if_validation_fail: false,
     // Publish Artifact(Docker Image)
-    artifact_publish_check: false,
-    artifact_destination_type: "ecr",
+    artifact_publish_check: true,
+    artifact_destination_type: "harbor",
     jenkins_aws_credentials_id: "aws-rajat",
     docker_image_name: "ecom-notification-consumer-service",
     ecr_repo_name: "ecom-notification-consumer-service",
     ecr_region: "ap-south-1",
     account_id: "543339517346",
+
+    // Harbor Specific Parameters (NEW)
+    harbor_url: "https://registry.ldc.opstree.dev/",
+    harbor_project: "demo",
+    harbor_credentials_id: "harbor-creds",
     //dockle scanning
     dockle_scan_check: 'false', // or 'false'
     dockle_report_publish: 'true', // to publish dockle report
