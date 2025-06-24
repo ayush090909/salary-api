@@ -67,7 +67,7 @@ node {
     max_allowed_image_size: 100,
     fail_job_if_validation_fail: false,
     // Publish Artifact(Docker Image)
-    artifact_publish_check: 'true',
+    artifact_publish_check: true,
     artifact_destination_type: "harbor",
     jenkins_aws_credentials_id: "aws-rajat",
     docker_image_name: "java-service",
