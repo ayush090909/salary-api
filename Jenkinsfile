@@ -1,4 +1,4 @@
-@Library('cicid-shared-lib@harbour-integration') _
+@Library('cicid-shared-lib') _
 def cipipeline = new opstree.ci.templates.java_ci.java_ci()
 node {
   cipipeline.call([
