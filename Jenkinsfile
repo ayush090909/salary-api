@@ -1,5 +1,5 @@
-@Library('cicid-shared-lib') _
-def cipipeline = new opstree.ci.templates.java_ci.java_ci()
+@Library('cicid@tagging') _
+def cipipeline = new opstree.ci.templates.artifact_management.artifact_management()
 node {
   cipipeline.call([
   enable_jenkins_build_param_override: true,
@@ -17,7 +17,7 @@ node {
     repo_ssh_url: "https://github.com/ayush090909/salary-api.git",
     repo_branch: "main",
     repo_url_type: "http",
-    jenkins_git_creds_id: "github-cred",
+    jenkins_git_creds_id: "ayush-github-id",
     source_code_path: "",
      // Dependency Scanning
     dependency_check: false,
@@ -68,12 +68,12 @@ node {
     fail_job_if_validation_fail: false,
     // Publish Artifact(Docker Image)
     artifact_publish_check: true,
-    artifact_destination_type: "harbor",
-    jenkins_aws_credentials_id: "aws-rajat",
+    artifact_destination_type: "ecr",
+    jenkins_aws_credentials_id: "aws-cicd",
     docker_image_name: "salary-api",
-    ecr_repo_name: "ecom-notification-consumer-service",
+    ecr_repo_name: "test",
     ecr_region: "ap-south-1",
-    account_id: "543339517346",
+    account_id: "158311564815",
 
     // Harbor Specific Parameters (NEW)
     harbor_url: "registry.ldc.opstree.dev",
