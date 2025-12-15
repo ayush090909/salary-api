@@ -75,6 +75,14 @@ node {
     ecr_region: "ap-south-1",
     account_id: "158311564815",
 
+
+    // Image Tagging Strategy (NEW)
+    image_tagging_strategy: "commit-hash",   // or timestamp / build-number / custom / metafile / multi
+    metafile_path: "",          // only used when strategy = metafile
+    custom_image_tag: "",                    // only used when strategy = custom
+    push_latest: true,                       // tag :latest along with generated tag
+
+
     // Harbor Specific Parameters (NEW)
     harbor_url: "registry.ldc.opstree.dev",
     harbor_project: "ot-microservices",
