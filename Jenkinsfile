@@ -72,7 +72,7 @@ node {
     jenkins_aws_credentials_id: "aws-cicd",
     docker_image_name: "salary-api",
     ecr_repo_name: "test",
-    ecr_region: "ap-south-1",
+    ecr_region: "us-east-1",
     account_id: "255731431191",
 
 
