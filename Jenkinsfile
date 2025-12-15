@@ -1,4 +1,4 @@
-@Library('cicid@tagging') _
+@Library('cicd@tagging') _
 def cipipeline = new opstree.ci.templates.artifact_management.artifact_management()
 node {
   cipipeline.call([
