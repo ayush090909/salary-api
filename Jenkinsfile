@@ -73,7 +73,7 @@ node {
     docker_image_name: "salary-api",
     ecr_repo_name: "test",
     ecr_region: "ap-south-1",
-    account_id: "158311564815",
+    account_id: "255731431191",
 
 
     // Image Tagging Strategy (NEW)
