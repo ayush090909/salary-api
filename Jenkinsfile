@@ -77,9 +77,9 @@ node {
 
 
     // Image Tagging Strategy (NEW)
-    image_tagging_strategy: "commit-hash",   // or timestamp / build-number / custom / metafile / multi
+    image_tagging_strategy: "custom",   // or timestamp / build-number / custom / metafile / multi
     metafile_path: "",          // only used when strategy = metafile
-    custom_image_tag: "",                    // only used when strategy = custom
+    custom_image_tag: "v1.0.7",                    // only used when strategy = custom
     push_latest: true,                       // tag :latest along with generated tag
 
 
