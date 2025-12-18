@@ -80,7 +80,7 @@ node {
     artifact_publish_check: true,
     artifact_destination_type: "ecr",
     jenkins_aws_credentials_id: "aws-cicd",
-    docker_image_name: "salary-api",     // MUST MATCH build
+    docker_image_name: "test",     // MUST MATCH build
     ecr_repo_name: "test",
     ecr_region: "us-east-1",
     account_id: "255731431191",
