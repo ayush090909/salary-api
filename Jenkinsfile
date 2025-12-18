@@ -51,7 +51,7 @@ node {
     jenkins_sonarqube_token_creds_id: "sonar-token",
     // Build Dockerfile
     perform_build_dockerfile: true,
-    image_name: "",
+    image_name: "salary-api",
     dockerfile_location: "Dockerfile",
     dockerfile_context: "",
     codeartifact_dependency: false,
