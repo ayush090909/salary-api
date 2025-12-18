@@ -53,7 +53,7 @@ node {
     // ===================================================
     // IMAGE TAGGING STRATEGY
     // ===================================================
-    image_tagging_strategy: "timestamp",   // you selected this
+    image_tagging_strategy: "build-number",  // you selected this
     metafile_path: "",
     custom_image_tag: "",
     push_latest: true,
