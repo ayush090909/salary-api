@@ -53,9 +53,9 @@ node {
     // ===================================================
     // IMAGE TAGGING STRATEGY
     // ===================================================
-    image_tagging_strategy: "multi",  // you selected this
-    metafile_path: "image.txt",
-    custom_image_tag: "v1.009",
+    image_tagging_strategy: "timestamp",  // you selected this
+    metafile_path: "",
+    custom_image_tag: "",
     push_latest: true,
     keep_last_images: 10,
 
