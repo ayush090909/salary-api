@@ -57,6 +57,7 @@ node {
     metafile_path: "",
     custom_image_tag: "",
     push_latest: true,
+    keep_last_images: 3,
 
     // ===================================================
     // IMAGE SCANNING (DISABLED)
