@@ -42,7 +42,7 @@ node {
     // DOCKER BUILD
     // ===================================================
     perform_build_dockerfile: true,
-    image_name: "salary-api",     // IMPORTANT — FIXED
+    image_name: "test",     // IMPORTANT — FIXED
     dockerfile_location: "Dockerfile",
     dockerfile_context: "",
     source_code_path: "",
