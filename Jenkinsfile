@@ -53,8 +53,8 @@ node {
     // ===================================================
     // IMAGE TAGGING STRATEGY
     // ===================================================
-    image_tagging_strategy: "metafile",  // you selected this
-    metafile_path: "image_tag.txt",
+    image_tagging_strategy: "multi",  // you selected this
+    metafile_path: "",
     custom_image_tag: "",
     push_latest: true,
     keep_last_images: 10,
