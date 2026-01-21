@@ -1,4 +1,4 @@
-@Library('cicd@tagging') _
+@Library('cicd') _
 def cipipeline = new opstree.ci.templates.artifact_management.artifact_management()
 
 node {
@@ -26,7 +26,7 @@ node {
     repo_ssh_url: "https://github.com/ayush090909/salary-api.git",
     repo_branch: "main",
     repo_url_type: "http",
-    jenkins_git_creds_id: "ayush-github-id",
+    jenkins_git_creds_id: "",
     source_code_path: "",
 
     // ===================================================
@@ -42,7 +42,7 @@ node {
     // DOCKER BUILD
     // ===================================================
     perform_build_dockerfile: true,
-    image_name: "test",     // IMPORTANT — FIXED
+    image_name: "opstree",     // IMPORTANT — FIXED
     dockerfile_location: "Dockerfile",
     dockerfile_context: "",
     source_code_path: "",
@@ -79,11 +79,11 @@ node {
     // ===================================================
     artifact_publish_check: true,
     artifact_destination_type: "ecr",
-    jenkins_aws_credentials_id: "aws-cicd",
-    docker_image_name: "test",     // MUST MATCH build
-    ecr_repo_name: "test",
+    jenkins_aws_credentials_id: "aws-creds",
+    docker_image_name: "opstree",     // MUST MATCH build
+    ecr_repo_name: "opstree",
     ecr_region: "us-east-1",
-    account_id: "255731431191",
+    account_id: "384961893048",
 
     // ===================================================
     // HARBOR (DISABLED)
