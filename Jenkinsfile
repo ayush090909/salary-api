@@ -43,7 +43,7 @@ node {
     // ===================================================
     perform_build_dockerfile: true,
     image_name: "opstree",     // IMPORTANT — FIXED
-    dockerfile_location: "Dockerfile",
+    dockerfile_location: "/Dockerfile",
     dockerfile_context: "",
     source_code_path: "",
     codeartifact_dependency: false,
