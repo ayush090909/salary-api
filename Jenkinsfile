@@ -26,7 +26,7 @@ node {
     repo_ssh_url: "https://github.com/ayush090909/salary-api.git",
     repo_branch: "main",
     repo_url_type: "http",
-    jenkins_git_creds_id: "",
+    jenkins_git_creds_id: "new-token",
     source_code_path: "",
 
     // ===================================================
